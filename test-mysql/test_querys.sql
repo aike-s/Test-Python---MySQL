@@ -9,13 +9,13 @@ Generar scripts que realicen las siguientes consultas:
 
 
 /* 2. Mostrar los últimos 10 items */
-
+SELECT * FROM items ORDER BY id DESC LIMIT 10;
 
 /* 3. Mostrar los items que en el nombre terminen con la letra A */
-
+SELECT * FROM items WHERE `name` LIKE '%A';
 
 /* 4. Mostrar los items que tengan relacionado el color Rojo */
-
+SELECT * FROM items WHERE `colorId` = '2',;
 
 /* 5. Se requiere asignar un precio a los items cuyo precio sea NULL, 
 el precio a agregar debe ser calculado de la siguiente forma: costo del item + 10.000*/
@@ -41,5 +41,3 @@ palabra "Nuevo" */
 
 /* 12. Agregar un campo llamado "description" en la tabla items, que permita ser NULL, 
 y que tenga un máximo de 200 caracteres */
-
-
